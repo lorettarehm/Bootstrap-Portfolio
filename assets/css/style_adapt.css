@@ -1,0 +1,51 @@
+@media only screen and (max-width: 600px) {
+
+    :root{ /*reset variables to be used throughout the CSS*/
+      --big-font: 2.2rem;
+      --medium-font: 1.8rem;
+      --small-font: 0.3rem;
+    }
+  
+    header{
+      align-items: center;
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    header h1{
+      padding: 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    nav{
+      justify-content:space-between;
+    }
+  
+    nav a{
+      font-weight: normal;
+      color: var(--colour-light);
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  
+    .page-section { /* divider */
+        align-items: center;
+        flex-direction: column;
+    }
+  
+    .projects { /* divider */
+      height: calc(10*var(--big-font));
+      gap: 2%;
+      grid-template-areas: "project1"
+                           "project2"
+                           "project3"
+                           "project4"
+                           "project5";
+    }
+    
+    .contacts {
+      width: 100%;
+      flex-direction: column;
+    }
+  }

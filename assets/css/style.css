@@ -1,0 +1,217 @@
+:root { /*set up variables to be used throughout the CSS*/
+  --colour-darker: rgb(122,96,81);
+  --colour-dark: rgb(90,172,217);
+  --colour-light: rgb(107,203,255);
+  --big-font: 3.2rem;
+  --medium-font: 2.8rem;
+  --small-font: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* header elements style*/
+header {
+  background-color: var(--colour-darker);
+  display: flex;
+  gap: var(--medium-font);
+}
+
+header h1 {
+  /* text attributes */
+  font-weight: bold;
+  color: var(--colour-darker);
+  font-size: var(--big-font);
+  /* container attributes */
+  background-color: var(--colour-light);
+  float: left;
+  flex-grow: 0.1;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-left: var(--medium-font);
+}
+
+nav {
+  flex: 5; /* in relation to parent flex */
+  display: flex;
+  align-self: stretch;
+  justify-content: safe flex-end;
+  align-items: flex-end;
+  gap: var(--small-font);
+  padding: 1.5rem;
+}
+
+nav a {
+  font-weight: bold;
+  color: var(--colour-light);
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+/* override bootstrap classes */
+.navbar-collapse {
+  align-items: flex-end;
+}
+
+.navbar-light .navbar-toggler {
+  color: var(--colour-dark);
+  border-color: var(--colour-dark);
+  background-color: var(--colour-darker);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--colour-light);
+}
+
+/* banner elements style*/
+.jumbotron {
+  /* container attributes */
+  height: 35vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  /* background attributes */
+  background-image: url("../images/02-lo-bg.jpg");
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-color: rgb(220, 221, 222);
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.jumbotron h2 {
+  /* margin: 3vh; */
+  padding: 1vh;
+  float: right;
+  color: var(--colour-darker);
+  background-color: var(--colour-light);
+  font-weight: bold;
+}
+
+/* main elements style*/
+
+main {
+  padding: 1vh;
+  margin: 1vh;
+}
+
+.page-section {
+  /* flexbox properties*/
+  display: flex;
+  flex-direction: row;
+  gap: var(--small-font);
+  align-items: center;
+  justify-content: flex-start;
+  /* container properties */
+  padding: var(--small-font);
+}
+
+.page-section:before { /* adds responsive section separator */
+  content: "";
+  border: 0.3em solid var(--colour-dark);
+  background-color: var(--colour-dark);
+  align-self: stretch;
+}
+
+/* sets proportion of title vs. content */
+.section__item--title {
+  padding-left: 5%;
+  flex: 10%;
+  order: -1; /* reorder flex item to make separator appear between section items */
+  /* font style set-up*/
+  font-weight: bold;
+  color: var(--colour-dark);
+  text-align: right;
+  font-size: var(--big-font);
+}
+
+.section__item--content{
+  flex: 40%;
+  text-align: justify;
+}
+
+/* define project grid*/
+.projects {
+  display: grid;
+  width: 100%;
+  height: calc(7*var(--big-font));
+  gap: 1%;
+  grid-template-areas: "project1 project1"
+                       "project1 project1"
+                       "project2 project3"
+                       "project4 project5";
+}
+
+.project1{
+  grid-area: project1;
+}
+
+.project2{
+  grid-area: project2;
+}
+
+.project3{
+  grid-area: project3;
+}
+
+.project4{
+  grid-area: project4;
+}
+
+.project5{
+  grid-area: project5;
+}
+
+.project-textbox{
+  background-color: var(--colour-light);
+  padding: 0.5em;
+  position: absolute;
+  bottom: var(--small-font);
+  left: var(--smedium-font);
+  color: var(--colour-darker);
+  text-align: left;
+}
+
+.project-title {
+  font-size: 80%;
+}
+
+.project-subtitle {
+  font-size: 60%;
+}
+
+article {
+  position: relative;
+  overflow: hidden;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+}
+
+/* set up contacts area */
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
