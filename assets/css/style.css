@@ -7,22 +7,7 @@
   --small-font: 1rem;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-}
-
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
@@ -31,53 +16,43 @@ body {
 header {
   background-color: var(--colour-darker);
   display: flex;
-  gap: var(--medium-font);
 }
 
-header h1 {
+/* header h1 { */
+nav {
+  flex: 5; /* in relation to parent flex */
+}
+
+nav a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+/* override bootstrap classes */
+.navbar-brand {
   /* text attributes */
   font-weight: bold;
   color: var(--colour-darker);
   font-size: var(--big-font);
   /* container attributes */
   background-color: var(--colour-light);
-  float: left;
   flex-grow: 0.1;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  padding-left: var(--medium-font);
+  /* margin-top: 1%;
+  margin-bottom: 1%; */
+  margin: 1% 0;
+  padding: 0 var(--small-font) 0 var(--medium-font); 
 }
 
-nav {
-  flex: 5; /* in relation to parent flex */
-  display: flex;
-  align-self: stretch;
-  justify-content: safe flex-end;
-  align-items: flex-end;
-  gap: var(--small-font);
-  padding: 1.5rem;
-}
-
-nav a {
-  font-weight: bold;
-  color: var(--colour-light);
-  text-align: center;
-  font-size: 1.2rem;
-  text-decoration: underline;
-}
-
-/* override bootstrap classes */
-.navbar-collapse {
-  align-items: flex-end;
-}
-
-.navbar-light .navbar-toggler {
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
   color: var(--colour-dark);
-  border-color: var(--colour-dark);
-  background-color: var(--colour-darker);
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-toggler {
+  border-color: var(--colour-dark);
+}
+
+.navbar-nav .nav-link {
   color: var(--colour-light);
 }
 
@@ -94,8 +69,6 @@ nav a {
   background-position: right center;
   background-repeat: no-repeat;
   background-color: rgb(220, 221, 222);
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 .jumbotron h2 {
@@ -108,7 +81,6 @@ nav a {
 }
 
 /* main elements style*/
-
 main {
   padding: 1vh;
   margin: 1vh;
@@ -270,6 +242,6 @@ article img {
 }
 
 .fa:hover {
-  color: var(--colour-darker);
-  text-shadow: 0 0 20px var(--colour-dark);
+  color: var(--colour-dark);
+  text-shadow: 0 0 20px var(--colour-light);
 }
