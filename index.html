@@ -8,7 +8,8 @@
         <title>Loretta Rehm // Web Developer</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Anton|Jura&display=swap" rel="stylesheet">
+        <link
+        href="https://fonts.googleapis.com/css?family=Anton|Jura&display=swap" rel="stylesheet">
         <!-- My Stylesheets -->
         <link rel="stylesheet" href="./assets/css/reset.css"/>
         <link rel="stylesheet" href="./assets/css/style.css"/>
@@ -67,53 +68,71 @@
             <section class="page-section" id="work">
                 <h2 class="page-section__item section__item--title">Work</h2>
                 <div class="page-section__item section__item--content">
-                    <div class="projects" id="projects">
-                        <article class="project1">
-                            <a href="https://lorettarehm.github.io/website_acessibility_refactor/" target="_blank">
-                                <img class="project-image" src="./assets/images/02-portfolio-4.jpg" alt="Acessibility refactor">
-                            </a>
-                            <div class="project-textbox">
-                                <p class="project-title">Acessibility refactor</p>
-                                <p class="project-subtitle">HTML | CSS</p>
+                    <section class="work">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <a href="https://lorettarehm.github.io/website_acessibility_refactor/" target="_blank">
+                                            <img class="card-img-top" src="./assets/images/02-portfolio-4.jpg" alt="Acessibility refactor">
+                                        </a>
+                                        <div class="card-body card-img-overlay">
+                                            <h5 class="card-title">Acessibility refactor</h5>
+                                            <h6 class="card-subtitle">HTML | CSS</h6>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </article>
-                        <article class="project2">
-                            <a href="#!">
-                                <img class="project-image" src="./assets/images/02-portfolio-1.jpg" alt="Led wall project">
-                            </a>
-                            <div class="project-textbox">
-                                <p class="project-title">Led Wall</p>
-                                <p class="project-subtitle">Node | IoT</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="card">
+                                        <a href="#!" target="_blank">
+                                            <img class="card-img-top" src="./assets/images/02-portfolio-1.jpg" alt="Acessibility refactor">
+                                        </a>
+                                        <div class="card-body card-img-overlay">
+                                            <h5 class="card-title">Led Wall</h5>
+                                            <h6 class="card-subtitle">Node | IoT</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card">
+                                        <a href="#!" target="_blank">
+                                            <img class="card-img-top" src="./assets/images/02-portfolio-2.jpg" alt="Acessibility refactor">
+                                        </a>
+                                        <div class="card-body card-img-overlay">
+                                            <h5 class="card-title">Calculator</h5>
+                                            <h6 class="card-subtitle">React | JavaScript | CSS</h6>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </article>
-                        <article class="project3">
-                            <a href="#!">
-                                <img class="project-image" src="./assets/images/02-portfolio-2.jpg" alt="Calculator project">
-                            </a>
-                            <div class="project-textbox">
-                                <p class="project-title">Calculator</p>
-                                <p class="project-subtitle">React | JavaScript | CSS</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="card">
+                                        <a href="#!" target="_blank">
+                                            <img class="card-img-top" src="./assets/images/02-portfolio-3.jpg" alt="Acessibility refactor">
+                                        </a>
+                                        <div class="card-body card-img-overlay">
+                                            <h5 class="card-title">Pastel Puzzles</h5>
+                                            <h6 class="card-subtitle">MERN Stack</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card">
+                                        <a href="#!" target="_blank">
+                                            <img class="card-img-top" src="./assets/images/02-run-buddy.jpg" alt="Acessibility refactor">
+                                        </a>
+                                        <div class="card-body card-img-overlay">
+                                            <h5 class="card-title">Run Buddy</h5>
+                                            <h6 class="card-subtitle">HTML | CSS</h6>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </article>
-                        <article class="project4">
-                            <a href="#!">
-                                <img class="project-image" src="./assets/images/02-portfolio-3.jpg" alt="Pastel puzzles project">
-                            </a>
-                            <div class="project-textbox">
-                                <p class="project-title">Pastel Puzzles</p>
-                                <p class="project-subtitle">MERN Stack</p>
-                            </div>
-                        </article>
-                        <article class="project5">
-                            <a href="#!">
-                                <img class="project-image" src="./assets/images/02-run-buddy.jpg" alt="Run buddy project">
-                            </a>
-                            <div class="project-textbox">
-                                <p class="project-title">Run Buddy</p>
-                                <p class="project-subtitle">HTML | CSS</p>
-                            </div>
-                        </article>
-                    </div>
+                        </div>
+                    </section>
                 </div>
             </section>
 
@@ -128,11 +147,6 @@
                     <a href="#">Spotify</a>
                 </div>
             </section>
-        </main>
-        <!-- JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </body>
     </body>
-</html>
+</html></main><!-- JavaScript --><!-- jQuery first, then Popper.js, then Bootstrap JS --><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script></body></html>
