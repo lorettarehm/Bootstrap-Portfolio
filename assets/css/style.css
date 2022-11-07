@@ -261,3 +261,15 @@ article img {
   flex-direction: row;
   justify-content: space-around;
 }
+
+/* overriding fontawesome colors */
+.fa {
+  color: var(--colour-dark);
+  transition: box-shadow .5s;
+  border-radius: 15%;
+}
+
+.fa:hover {
+  color: var(--colour-darker);
+  text-shadow: 0 0 20px var(--colour-dark);
+}
